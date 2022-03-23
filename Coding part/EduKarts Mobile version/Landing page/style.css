@@ -1,0 +1,1501 @@
+
+/*Header section*/
+.main-header{
+  display: flex;
+  background-color: pink;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+  
+}
+.logo{
+  height: 35px;
+  width: 98px;
+}
+.main-nav{
+  
+}
+.main-nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 6pt;
+  padding: 0px 3px 0px 5px;
+  
+}
+.nav-link{
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  color: darkred;
+}
+#login-link{
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  color: darkred;
+  border: 1.5px solid darkred;
+  borrder-radius: 4px;
+  padding: 2px 6px 2px 6px;
+  box-shadow: 3px 3px 0px 1px pink, 3px 3px 0px 2px darkred;
+}
+#login-link:hover{
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  color: pink;
+  background-color: darkred;
+  transition: 0.8s;
+  border: 1.5px solid pink;
+  bordeer-radius: 4px;
+  padding: 2px 6px 2px 6px;
+  box-shadow: 3px 5px 0px 1px darkred;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-boox;
+}
+
+
+body{
+  background-image: url(/images/backgground3.png);
+ background-size: cover;
+ font-family: "Lato", sans-serif;
+ 
+}
+
+.main-section{
+  background-image: url("/images/background.png");
+  background-size: cover;
+  margin: 0;
+  
+}
+
+
+.hero{
+  padding-top: 3%;
+}
+.hero-text-box{
+  
+}
+.hero-heading{
+  color: pink;
+  font-size: 23pt;
+  font-weight: 200;
+  padding-left: 18%;
+  
+}
+
+
+.hero-description{
+  color: pink;
+  font-size: 8pt;
+  padding-left: 15%;
+  padding-right: 10px;
+  margin-bottom: 4%;
+  line-height: 130%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+.hero-btn1{
+  text-decoration: none;
+  width: 40px;
+  color: darkred;
+  border: 2px solid darkred;
+  background-color: pink;
+  padding: 4px;
+  margin: 5% 5% 0% 20%;
+  border-radius: 15px;
+  transition: 0.6s;
+}
+.hero-btn2{
+  text-decoration: none;
+  width: 80px;
+  color: pink;
+  transition: 0.8s;
+  border: 1px solid pink;
+  background-color: darkred;
+  padding: 4px;
+  
+  border-radius: 15px;
+}
+.hero-btn1:hover,
+.hero-btn1:active {
+  background-color: darkred;
+  color: pink;
+   border: 1px solid pink;
+}
+.hero-btn2:hover,
+.hero-btn2:active {
+  background-color: pink;
+  color: darkred;
+  border: 1px solid darkred;
+}
+
+/*Why Section*/
+.why-section{
+  margin: 9% 20% 0% 0%;
+  
+}
+.why-image{
+  align-items: center;
+  width: 83%;
+  height: 15%;
+  float: right;
+  margin-top: 0;
+  
+}
+.why-text-box{
+  width: 60%;
+  float: right;
+  margin: 0% 18% 0% 0%;
+}
+.why-heading{
+  color: darkred;
+  text-align: center;
+}
+.why-description{
+  color: black;
+  text-align: center;
+  font-size: 8pt;
+}
+.reason-box{
+    width: 80%;
+    
+    margin: 0% 8% 0% 10%;
+    padding: 0px 5px 0px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.reason1, .reason2, .reason3{
+  margin: 0% 4% 0% 4%;
+  color: darkred;
+}
+.reason-icon{
+  width: 20px;
+}
+.reason-description{
+ font-size: 8pt;
+}
+
+/*Career Map Box*/
+
+.career-map-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+#picture-box{
+  width: 180px;
+  height: 185px;
+  background-color: pink;
+  margin: 9% 0% 0% 9%;
+}
+#career-map-text-box{
+  width: 100%;
+  
+}
+.career-map-header{
+  color: darkred;
+  text-align: left;
+  font-weight: 200;
+  font-size: 20pt;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+.career-map-subheading{
+  font-size: 8pt;
+  margin-bottom: 4.8px;
+  margin-top: 0;
+}
+.career-map-description{
+ font-size: 8pt;
+ margin-bottom: 9%;
+ margin-left: 10px;
+ line-height: 130%;
+}
+.career-map-btn{
+  text-decoration: none;
+  color: pink;
+  width: 80px;
+  background-color: darkred;
+  border: 2px solid pink;
+  border-radius: 10px;
+  padding: 4px 20px 5px 20px;
+  margin-top: 20px;
+  transition: 0.8s;
+}
+.career-map-btn:hover,
+.career-map-btn:active {
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+
+
+/*featured section*/
+.featured-section{
+  
+}
+.featured-text-box{
+  
+}
+.featured-header{
+  font-size: 15pt;
+  color: darkred;
+  margin: 18% 0% 0% 9%;
+  background-color: pink;
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 80%;
+  height: 50px;
+  padding: 3px 5px 5px 7px;
+}
+.featured-description{
+  font-size: 8pt;
+  line-height: 135%;
+  color: black;
+  margin: 6% 0% 14% 6%;
+  
+}
+#marni{
+  height: 160px;
+  float: right;
+}
+#male{
+  height: 180px;
+  width: 190px;
+  float: right;
+}
+/*Team section*/
+.team-description{
+  
+}
+.team-header{
+  color: darkred;
+  font-size: 20pt;
+  margin: 4% 0% 3% 6%;
+  
+}
+.team-info{
+  color: darkred;
+  font-size: 8pt;
+  width: 90%;
+  margin: 3% 3% 0% 6%;
+  line-height: 130%;
+}
+.team-section{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.team-container{
+  display: inline-block;
+  width: 30%;
+  height: 177px;
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+  border-radius: 8px;
+  margin: 4% 2% 4% 4%;
+  box-shadow: -10px 8px 0px 0px pink;
+}
+.team-container:hover,
+.team-container:active {
+  box-shadow: -15px 10px 0px 0px darkred;
+  transition: all 1s ease-out;
+  background-color: darkred;
+  color: pink;
+  border: 2px solid pink;
+  border-radius: 8px;
+  margin: 4% 2% 4% 4%;
+  
+}
+.team-member1{
+  clip-path: circle(50% at 50% 50%);
+  align-items: center;
+  width: 87px;
+  height: 87px;
+  
+  margin: 5% 5% 5% 12%;
+  transition: all 1s ease-out;
+}
+.team-member1:hover,
+.team-member1:active{
+  filter: grayscale(100%);
+  transform: scale(1.02);
+  overflow: hidden;
+  animation: zoomeffect 10s infinite;
+}
+.team-member-name{
+  margin-top: 0;
+  font-size: 9pt;
+  text-align: center;
+}
+.team-member-title{
+  margin-top: 0;
+  font-size: 7pt;
+  text-align: center;
+  padding-left: 2px;
+}
+.team-member-btn{
+  font-size: 10pt;
+  text-align: center;
+  background-color: darkred;
+  color: pink;
+  width: 80%;
+  border: 1px solid pink;
+  border-radius: 12px;
+  padding: 2px 4px 2px 4px;
+  margin: 10% 10% 0% 10%;
+  transition: 0.8s;
+}
+#about1, #about2, #about3, #about4, #about5, #about6, #about7, #about8, #about9 {
+  font-size: 6pt;
+  text-align: center;
+  overflow-y: scroll;
+  
+  animation-name: animate;
+  animation-duration: 5s;
+  animation-play-state: infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+       opacity: 1;
+       
+    }
+}
+
+.team-member-btn:hover,
+.team-member-btn:active {
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+  
+}
+
+/*signup*/
+.container{
+  background-color: pink;
+  width: 50%;
+  height: auto;
+  
+  margin: 5% 5% 0% 10%;
+  float: right;
+  border: 2px solid darkred;
+  box-shadow: -2px 22px 0px 8px #FFD9D9;
+  border-radius: 20px 20px 0px 20px;
+}
+
+h3, h5, #p{
+  text-align: center;
+  color: darkred;
+  font-weight: 18pt;
+}
+
+#name, #email, #password, #rePassword, #submit {
+  width: 80%;
+  font-family: "Lato";
+  margin-left: 8%;
+  margin-right: 9%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid indianred;
+  border-radius: 10px;
+}
+#name:hover, #email:hover, #password:hover, #rePassword:hover,
+#name:active, #email:active, #password:active, #rePassword:active {
+  border: 4px solid indianred;
+}
+#name, #email, #password, #rePassword{
+  color: darkred;
+  padding: 8px 5px 5px 8px;
+}
+
+#submit{
+  width: 85%;
+  margin-left: 8%;
+  margin-right: 9%;
+  background-color: darkred;
+  color: white;
+  transition: 0.8s;
+}
+
+#google{
+  width: 55%;
+  margin-left: 21%;
+  margin-right: 21%;
+  border: none;
+  background-color: darkred;
+  color: white;
+  border-radius: 8px;
+  transition: 0.8s;
+}
+.sign{
+  margin: 0% 0% 5% 5%;
+  height: 405px;
+  padding-top: 20px;
+}
+.sign-heading{
+  color: darkred;
+  font-size: 20pt;
+}
+.sign-description{
+  font-size: 8pt;
+  padding-top: 10px;
+}
+
+/*footer*/
+.footer{
+  margin: 0;
+}
+
+footer{
+  display: flex;
+  margin-top: 0;
+  background-color: pink;
+  color: darkred;
+  float: right;
+  width: 100%;
+  height: 150px;
+}
+
+#submit:hover,
+#submit:active,
+#google:hover,
+#google:active{
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+#footer-logo{
+  width: 100%;
+  height: 50%;
+  margin: 3% 5% 5% 5%;
+}
+.footer-description{
+  width: 25%;
+  margin: 2% 5% 6% 5%;
+  font-size: 7pt;
+  float: left;
+}
+.ftr{
+  
+}
+#ftr2{
+  margin-top: 8%;
+}
+
+
+
+
+
+          /*For 424px*/
+@media only screen and (max-width: 425px) {
+  
+ .main-header{
+   
+ }
+  .why-section{
+  margin: 9% 20% 0% 0%;
+}
+  .career-map-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+.featured-header{
+  font-size: 15pt;
+  color: darkred;
+  margin: 13% 0% 0% 9%;
+  background-color: pink;
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 80%;
+  height: 50px;
+  padding: 3px 5px 5px 7px;
+}
+}
+
+
+
+/*For width 360px-400px*/
+
+@media only screen and (max-width: 360px) {
+  
+  
+/*Header section*/
+.main-header{
+  display: flex;
+  background-color: pink;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+  
+}
+.logo{
+  height: 35px;
+  width: 98px;
+}
+.main-nav{
+  
+}
+.main-nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 6pt;
+  padding: 0px 3px 0px 5px;
+  
+}
+.nav-link{
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  color: darkred;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-bbox;
+}
+
+
+body{
+  background-image: url(/images/backgground3.png);
+ background-size: cover;
+ font-family: "Lato", sans-serif;
+
+}
+
+.main-section{
+  background-image: url("/images/background.png");
+  background-size: cover;
+  margin: 0;
+  
+}
+
+
+.hero{
+  padding-top: 3%;
+}
+.hero-text-box{
+  
+}
+.hero-heading{
+  color: pink;
+  font-size: 23pt;
+  font-weight: 200;
+  padding-left: 18%;
+  
+}
+.hero-description{
+  color: pink;
+  font-size: 8pt;
+  padding-left: 15%;
+  padding-right: 10px;
+  margin-bottom: 4%;
+  
+}
+.hero-btn1{
+  text-decoration: none;
+  width: 40px;
+  color: darkred;
+  border: 2px solid darkred;
+  background-color: pink;
+  padding: 4px;
+  margin: 5% 5% 0% 20%;
+  border-radius: 15px;
+  transition: 0.6s;
+}
+.hero-btn2{
+  text-decoration: none;
+  width: 80px;
+  color: pink;
+  transition: 0.8s;
+  border: 1px solid pink;
+  background-color: darkred;
+  padding: 4px;
+  
+  border-radius: 15px;
+}
+.hero-btn1:hover,
+.hero-btn1:active {
+  background-color: darkred;
+  color: pink;
+   border: 1px solid pink;
+}
+.hero-btn2:hover,
+.hero-btn2:active {
+  background-color: pink;
+  color: darkred;
+  border: 1px solid darkred;
+}
+
+/*Why Section*/
+.why-section{
+  margin: 9% 20% 0% 0%;
+  
+}
+.why-image{
+  width: 70%;
+  height: 15%;
+  float: right;
+  margin-top: 0;
+}
+.why-text-box{
+  width: 60%;
+  float: right;
+  margin: 0% 18% 0% 0%;
+}
+.why-heading{
+  color: darkred;
+  text-align: center;
+}
+.why-description{
+  color: black;
+  text-align: center;
+  font-size: 8pt;
+}
+.reason-box{
+    width: 80%;
+    
+    margin: 0% 8% 0% 10%;
+    padding: 0px 5px 0px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.reason1, .reason2, .reason3{
+  margin: 0% 4% 0% 4%;
+  color: darkred;
+}
+.reason-icon{
+  width: 20px;
+}
+.reason-description{
+ font-size: 8pt;
+}
+
+/*Career Map Box*/
+
+.career-map-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+#picture-box{
+  width: 160px;
+  height: 165px;
+  background-color: pink;
+  margin: 9% 0% 0% 9%;
+}
+#career-map-text-box{
+  width: 100%;
+  
+}
+.career-map-header{
+  color: darkred;
+  text-align: left;
+  font-weight: 200;
+  font-size: 20pt;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+.career-map-subheading{
+  font-size: 8pt;
+  margin-bottom: 4.8px;
+  margin-top: 0;
+}
+.career-map-description{
+ font-size: 8pt;
+ margin-bottom: 9%;
+ margin-left: 10px;
+ 
+}
+.career-map-btn{
+  text-decoration: none;
+  color: pink;
+  width: 80px;
+  background-color: darkred;
+  border: 2px solid pink;
+  border-radius: 10px;
+  padding: 4px 20px 5px 20px;
+  margin-top: 20px;
+  transition: 0.8s;
+}
+.career-map-btn:hover,
+.career-map-btn:active {
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+
+
+/*featured section*/
+.featured-section{
+  
+}
+.featured-text-box{
+  
+}
+.featured-header{
+  font-size: 15pt;
+  color: darkred;
+  margin: 18% 0% 0% 9%;
+  background-color: pink;
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 80%;
+  height: 50px;
+  padding: 3px 5px 5px 7px;
+}
+.featured-description{
+  font-size: 8pt;
+ 
+  color: black;
+  margin: 8% 0% 14% 6%;
+  
+}
+
+/*Team section*/
+.team-description{
+  
+}
+.team-header{
+  color: darkred;
+  font-size: 20pt;
+  margin: 4% 0% 3% 6%;
+  
+}
+.team-info{
+  color: darkred;
+  font-size: 8pt;
+  width: 90%;
+  margin: 3% 3% 0% 6%;
+  
+}
+.team-section{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.team-container{
+  display: inline-block;
+  width: 30%;
+  height: 177px;
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+  border-radius: 8px;
+  margin: 4% 2% 4% 4%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+}
+/*
+.team-container:hover,
+.team-container:active {
+  box-shadow: 0px 0px 10px 10px #D8D8D8;
+  transition: all 0.3s ease-out;
+  
+}*/
+.team-member{
+  position: relative;
+  width: 100%;
+  height: 177px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+.team-container:hover .team-member{
+  transform: rotateY(180deg);
+}
+
+.team-member-backside{
+  background-color: indianred;
+  color: pink;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 177px;
+  posittion: relative;
+}
+.team-member, .team-member-backside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+
+.team-member1{
+  clip-path: circle(50% at 50% 50%);
+  align-items: center;
+  width: 87px;
+  height: 87px;
+  margin: 5% 5% 5% 8%;
+  transition: all 1s ease-out;
+}
+.team-member1:hover,
+.team-member1:active{
+  filter: grayscale(100%);
+  transform: scale(1.02);
+  overflow: hidden;
+  animation: zoomeffect 10s infinite;
+}
+.team-member-name{
+  margin-top: 0;
+  font-size: 9pt;
+  text-align: center;
+}
+.team-member-title{
+  margin-top: 0;
+  font-size: 7pt;
+  text-align: center;
+  padding-left: 2px;
+}
+.team-member-btn{
+  font-size: 10pt;
+  text-align: center;
+  background-color: darkred;
+  color: pink;
+  width: 80%;
+  border: 1px solid pink;
+  border-radius: 12px;
+  padding: 2px 4px 2px 4px;
+  margin: 10% 10% 0% 10%;
+  transition: 0.8s;
+}
+#about1, #about2, #about3, #about4, #about5, #about6, #about7, #about8, #about9 {
+  font-size: 6pt;
+  text-align: center;
+  overflow-y: scroll;
+  
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-play-state: infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+.team-member-btn:hover,
+.team-member-btn:active {
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+
+/*signup*/
+.container{
+  background-color: pink;
+  width: 50%;
+  height: auto;
+  
+  margin: 5% 5% 0% 10%;
+  float: right;
+  border: 2px solid darkred;
+  box-shadow: -2px 22px 0px 8px #FFD9D9;
+  border-radius: 20px 20px 0px 20px;
+}
+
+h3, h5, #p{
+  text-align: center;
+  color: darkred;
+  font-weight: 18pt;
+}
+
+#name, #email, #password, #rePassword, #submit {
+  width: 80%;
+  font-family: "Lato";
+  margin-left: 8%;
+  margin-right: 9%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid indianred;
+  border-radius: 10px;
+}
+#name:hover, #email:hover, #password:hover, #rePassword:hover,
+#name:active, #email:active, #password:active, #rePassword:active {
+  border: 4px solid indianred;
+}
+#name, #email, #password, #rePassword{
+  color: darkred;
+  padding: 8px 5px 5px 8px;
+}
+
+#submit{
+  width: 85%;
+  margin-left: 8%;
+  margin-right: 9%;
+  background-color: darkred;
+  color: white;
+  transition: 0.8s;
+}
+
+#google{
+  width: 55%;
+  margin-left: 21%;
+  margin-right: 21%;
+  border: none;
+  background-color: darkred;
+  color: white;
+  border-radius: 8px;
+  transition: 0.8s;
+}
+.sign{
+  margin: 0% 0% 5% 5%;
+  height: 405px;
+  padding-top: 20px;
+}
+.sign-heading{
+  color: darkred;
+  font-size: 20pt;
+}
+.sign-description{
+  font-size: 8pt;
+  padding-top: 10px;
+}
+
+/*footer*/
+.footer{
+  margin: 0;
+}
+
+footer{
+  display: flex;
+  margin-top: 0;
+  background-color: pink;
+  color: darkred;
+  float: right;
+  width: 100%;
+  height: 150px;
+}
+
+#submit:hover,
+#submit:active,
+#google:hover,
+#google:active{
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+#footer-logo{
+  width: 100%;
+  height: 50%;
+  margin: 3% 5% 5% 5%;
+}
+.footer-description{
+  width: 25%;
+  margin: 2% 5% 6% 5%;
+  font-size: 7pt;
+  float: left;
+}
+.ftr{
+  
+}
+#ftr2{
+  margin-top: 8%;
+}
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Header section*
+.main-header{
+  display: flex;
+  background-color: pink;
+  align-items: center;
+  padding: 5px;
+  height: 40px;
+}
+.logo{
+  height: 35px;
+  width: 98px;
+}
+.main-nav{
+  
+}
+.main-nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 6pt;
+  padding: 0px 3px 0px 5px;
+  
+}
+.nav-link{
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  color: darkred;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-bbox;
+}
+
+
+body{
+  background-image: url(/images/backgground3.png);
+ background-size: cover;
+ width: 424px;
+ font-family: "Lato", sans-serif;
+}
+
+.main-section{
+  background-image: url("/images/background.png");
+  background-size: cover;
+  margin: 0;
+}
+
+
+.hero{
+  padding-top: 3%;
+}
+.hero-text-box{
+  
+}
+.hero-heading{
+  color: pink;
+  font-size: 23pt;
+  font-weight: 200;
+  padding-left: 18%;
+  
+}
+.hero-description{
+  color: pink;
+  font-size: 8pt;
+  padding-left: 15%;
+  padding-right: 10px;
+  margin-bottom: 4%;
+  
+}
+.hero-btn1{
+  text-decoration: none;
+  width: 40px;
+  color: darkred;
+  border: 2px solid darkred;
+  background-color: pink;
+  padding: 4px;
+  margin: 5% 5% 0% 20%;
+  border-radius: 15px;
+  transition: 0.6s;
+}
+.hero-btn2{
+  text-decoration: none;
+  width: 80px;
+  color: pink;
+  transition: 0.8s;
+  border: 1px solid pink;
+  background-color: darkred;
+  padding: 4px;
+  
+  border-radius: 15px;
+}
+.hero-btn1:hover,
+.hero-btn1:active {
+  background-color: darkred;
+  color: pink;
+   border: 1px solid pink;
+}
+.hero-btn2:hover,
+.hero-btn2:active {
+  background-color: pink;
+  color: darkred;
+  border: 1px solid darkred;
+}
+
+/*Why Section*
+.why-section{
+  margin: 9% 20% 0% 0%;
+  
+}
+.why-image{
+  width: 70%;
+  height: 15%;
+  float: right;
+}
+.why-text-box{
+  width: 60%;
+  float: right;
+  margin: 0% 18% 0% 0%;
+}
+.why-heading{
+  color: darkred;
+  text-align: center;
+}
+.why-description{
+  color: black;
+  text-align: center;
+  font-size: 8pt;
+}
+.reason-box{
+    width: 80%;
+    
+    margin: 0% 8% 0% 10%;
+    padding: 0px 5px 0px 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.reason1, .reason2, .reason3{
+  margin: 0% 4% 0% 4%;
+  color: darkred;
+}
+.reason-icon{
+  width: 20px;
+}
+.reason-description{
+ font-size: 8pt;
+}
+
+/*Career Map Box*
+
+.career-map-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+#picture-box{
+  width: 180px;
+  height: 185px;
+  background-color: pink;
+  margin: 9% 0% 0% 9%;
+}
+#career-map-text-box{
+  width: 100%;
+  
+}
+.career-map-header{
+  color: darkred;
+  text-align: left;
+  font-weight: 200;
+  font-size: 20pt;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+.career-map-subheading{
+  font-size: 8pt;
+  margin-bottom: 4.8px;
+  margin-top: 0;
+}
+.career-map-description{
+ font-size: 8pt;
+ margin-bottom: 5%;
+ margin-left: 10px;
+ 
+}
+.career-map-btn{
+  text-decoration: none;
+  color: pink;
+  width: 80px;
+  background-color: darkred;
+  border: 2px solid pink;
+  border-radius: 10px;
+  padding: 4px 20px 5px 20px;
+  margin-top: 20px;
+  transition: 0.8s;
+}
+.career-map-btn:hover,
+.career-map-btn:active {
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+
+
+/*featured section*
+.featured-section{
+  
+}
+.featured-text-box{
+  
+}
+.featured-header{
+  font-size: 15pt;
+  color: darkred;
+  margin: 13% 0% 0% 9%;
+  background-color: pink;
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 80%;
+  height: 50px;
+  padding: 3px 5px 5px 7px;
+}
+.featured-description{
+  font-size: 8pt;
+ 
+  color: black;
+  margin: 9% 0% 0% 6%;
+  
+}
+
+/*Team section*
+.team-description{
+  
+}
+.team-header{
+  color: darkred;
+  font-size: 20pt;
+  margin: 4% 0% 3% 6%;
+  
+}
+.team-info{
+  color: darkred;
+  font-size: 10pt;
+  width: 65%;
+  margin: 3% 0% 0% 6%;
+  
+}
+.team-section{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.team-container{
+  display: inline-block;
+  width: 30%;
+  
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+  border-radius: 8px;
+  margin: 4% 2% 4% 4%;
+}
+.team-container:hover,
+.team-container:active {
+  box-shadow: 0px 0px 10px 10px #D4D4DB;
+  transition: all 0.3s ease-out;
+}
+.team-member1{
+  clip-path: circle(50% at 50% 50%);
+  width: 80%;
+  height: 80%;
+  margin: 5% 5% 5% 8%;
+  transition: all 1s ease-out;
+}
+.team-member1:hover,
+.team-member1:active{
+  filter: grayscale(100%);
+  transform: scale(1.02);
+  overflow: hidden;
+  animation: zoomeffect 10s infinite;
+}
+.team-member-name{
+  margin-top: 0;
+  font-size: 10pt;
+  text-align: center;
+}
+.team-member-title{
+  margin-top: 0;
+  font-size: 10pt;
+  text-align: center;
+  padding-left: 2px;
+  overflow-x: auto;
+}
+
+.team-member-btn{
+  font-size: 10pt;
+  text-align: center;
+  background-color: darkred;
+  color: pink;
+  width: 80%;
+  border: 1px solid pink;
+  border-radius: 12px;
+  padding: 2px 4px 2px 4px;
+  margin: 0% 10% 5% 10%;
+  transition: 0.8s;
+}
+.team-member-btn:hover,
+.team-member-btn:active {
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+
+/*signup*
+.container{
+  background-color: pink;
+  width: 50%;
+  height: auto;
+  margin: 5% 5% 0% 10%;
+  float: right;
+  border: 2px solid darkred;
+  box-shadow: -2px 22px 0px 8px #FFD9D9;
+  border-radius: 20px 20px 0px 20px;
+}
+
+h3, h5, #p{
+  text-align: center;
+  color: darkred;
+  font-weight: 18pt;
+}
+
+#name, #email, #password, #rePassword, #submit {
+  width: 80%;
+  font-family: "Lato";
+  margin-left: 8%;
+  margin-right: 9%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid indianred;
+  border-radius: 10px;
+}
+#name:hover, #email:hover, #password:hover, #rePassword:hover,
+#name:active, #email:active, #password:active, #rePassword:active {
+  border: 4px solid indianred;
+}
+#name, #email, #password, #rePassword{
+  color: darkred;
+  padding: 8px 5px 5px 8px;
+}
+
+#submit{
+  width: 85%;
+  margin-left: 8%;
+  margin-right: 9%;
+  background-color: darkred;
+  color: white;
+  transition: 0.8s;
+}
+
+#google{
+  width: 55%;
+  margin-left: 21%;
+  margin-right: 21%;
+  border: none;
+  background-color: darkred;
+  color: white;
+  border-radius: 8px;
+  transition: 0.8s;
+}
+.sign{
+  margin: 0% 0% 5% 5%;
+  height: 405px;
+  padding-top: 20px;
+}
+.sign-heading{
+  color: darkred;
+  font-size: 20pt;
+}
+.sign-description{
+  font-size: 8pt;
+  padding-top: 10px;
+}
+
+/*footer*
+.footer{
+  margin: 0;
+}
+
+footer{
+  display: flex;
+  margin-top: 0;
+  background-color: pink;
+  color: darkred;
+  float: right;
+  width: 100%;
+  height: 150px;
+}
+
+#submit:hover,
+#submit:active,
+#google:hover,
+#google:active{
+  background-color: pink;
+  color: darkred;
+  border: 2px solid darkred;
+}
+#footer-logo{
+  width: 100%;
+  height: 50%;
+  margin: 3% 5% 5% 5%;
+}
+.footer-description{
+  width: 25%;
+  margin: 2% 5% 6% 5%;
+  font-size: 7pt;
+  float: left;
+}
+.ftr{
+  
+}
+#ftr2{
+  margin-top: 8%;
+}
+
+
+
+
+
+          /*For 424px
+@media only screen and (max-width: 424px) {
+  .why-section{
+  margin: 9% 20% 0% 0%;
+}
+  .career-map-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+.featured-header{
+  font-size: 15pt;
+  color: darkred;
+  margin: 13% 0% 0% 9%;
+  background-color: pink;
+  border: 2px solid darkred;
+  border-radius: 12px;
+  width: 80%;
+  height: 50px;
+  padding: 3px 5px 5px 7px;
+}
+}
+
