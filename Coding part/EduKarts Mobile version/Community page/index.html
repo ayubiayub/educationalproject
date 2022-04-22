@@ -4,16 +4,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link
-      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Inter:wght@400;500;700&family=Lato:wght@100;300;400;700;900&family=Public+Sans:wght@100;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Inter:wght@400;500;700&family=Lato:wght@100;300;400;700;900&family=Public+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet" />
+
   <title>Student Community</title>
+  
+  <style>
+    .modal{
+  position: fixed;
+  width: 40%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: darkred;
+  background-color: #ffd9da;
+  padding: 5% 1% 5% 1%;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-radius: 20px;
+}
+.post-sub, .post-subject-title, .post-subject-description{
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1%;
+  color: #89023e;
+}
+.post-subject-description{
+  height: 70px;
+}
+.post-btn{
+  width: 25%;
+  padding: 7px;
+  background-color: #89023e;
+  color: #ffd9da;
+  border-radius: 10px;
+  border: none;
+  margin: 5% 5% 0% 5%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.hidden{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.postSect-head{
+  height: 90px;
+}
+.post-search{
+  width: 50%;
+  height: 45px;
+  border-radius: 30px;
+  margin: 1% 25% 1% 25%;
+  border-style: none;
+  padding-left: 20px;
+}
+.post-links{
+  text-decoration: none;
+  color: pink;
+  margin: 20px 5px 5px 5px;
+}
+.post-section{
+  background-color: #EBEBEC;
+  height: 800px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  
+}
+.posts{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  transition: 1s;
+}
+
+
+.post{
+  background-color: #F9FAFF;
+  width: 80%;
+  marggin: 5% 0% 0% 2%;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #89023e;
+  border-radius: 5px;
+}
+.post-subject{
+  background-color: #ffd9da;
+  height: 800px;
+  width: 40%;
+  float: right;
+  text-align: center;
+  color: #89023e;
+  position: relative;
+}
+.create-post{
+  width: 100px;
+  height: 40px;
+  float: right;
+  background-color: #89023e;
+  color: pink;
+  border: none;
+  border-radius: 20px;
+  display: inline;
+}
+
+  </style>
   
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
-  
+
 </head>
 
 <body>
@@ -31,52 +146,161 @@
     </nav>
   </header>
   <section class="postSect-head">
-    <input type="search" class="post-search">
+    <input type="search" class="post-search" placeholder="search post">
     <br>
     <caption class="postSect-links">
-      <a href="#" class="post-links">Technology</a>
-      <a href="#" class="post-links">Technology</a>
-      <a href="#" class="post-links">Technology</a>
-      <a href="#" class="post-links">Technology</a>
+      <a href="#" class="post-links ml_link" data-btn="0">Machine learning</a>
+      <a href="#" class="post-links web_dev_link" data-btn="1">Web development</a>
+      <a href="#" class="post-links app_dev_link" data-btn="2">App development</a>
+      <a href="#" class="post-links ethical_hacking_link" data-btn="3">Ethical hacking</a>
     </caption>
   </section>
-  <section class="post-section">
-    <!--post subject-->
-    <div class="post-subject">
-      <h3>Subject discussion</h3>
-      <button class="btn-post">&plus;</button>
-      technology
-      <hr>
-      technology
-      <hr>
-      technology
-      <hr>
-      technology
-      <hr>
-    </div>
-    <!--similar post will be appear here by using JS-->
-    <div class="posts">
-    <div class="post">
-      <h5>User name</h5>
-      <br>
-      <p>help me to attend the meeting running a meeting with you all are beginner to advanced a high school student of the website's content and resources for</p>
-    </div>
-    <div class="post">
-      <h5>User name</h5>
-      <br>
-      <p>help me to attend the meeting running a meeting with you all are beginner to advanced a high school student of the website's content and resources for</p>
-    </div>
-    <div class="post">
-      <h5>User name</h5>
-      <br>
-      <p>help me to attend the meeting running a meeting with you all are beginner to advanced a high school student of the website's content and resources for</p>
-    </div>
-    </div>
+  <!--Modal-window-->
+  <div class="modal hidden">
+    <h1 style="float: right; left: 50%;">&times;</h1>
+    <input type="text" placeholder="Post Subject" class="post-sub" value="">
+    <input type="text" placeholder="title" class="post-subject-title">
+    <textarea placeholder="description" class="post-subject-description"></textarea>
+    <button type="submit" class="post-btn">POST</button>
+  </div>
+  <div class="overlay hidden"></div>
+  <!--post subject-->
+  <section class="post-subject">
+    <h3>Subject discussion</h3>
+    <button class="create-post">&plus;</button>
+    <br>
+    <br>
+    technology
+    <hr>
+    technology
+    <hr>
+    technology
+    <hr>
+    technology
+    <hr>
   </section>
+  <div class="post-section">
+
+    <!--similar post will be appear here by using JS-->
+    
+      <div class="posts ml">
+        <div class="post">
+          <h3>User name</h3>
+          <br>
+          <h4>DOM manipulation</h4>
+          <br>
+          <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+          <br>
+          <div class="btn__action">
+            <button class="btn btn_like">LIKE</button>
+            <button class="btn btn_dislike">DISLIKE</button>
+            <button class="btn btn_reply">REPLY</button>
+          </div>
+        </div>
+        <div class="post">
+          <h3>User name</h3>
+          <br>
+          <h4>DOM manipulation</h4>
+          <br>
+          <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+          <br>
+          <div class="btn__action">
+            <button class="btn btn_like">LIKE</button>
+            <button class="btn btn_dislike">DISLIKE</button>
+            <button class="btn btn_reply">REPLY</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="veiw-class"></div>
+      <div class="posts web_dev">
+      <div class="post">
+        <h3>User name</h3>
+        <br>
+        <h4>DOM manipulation</h4>
+        <br>
+        <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+        <br>
+        <div class="btn__action">
+          <button class="btn btn_like">LIKE</button>
+          <button class="btn btn_dislike">DISLIKE</button>
+          <button class="btn btn_reply">REPLY</button>
+        </div>
+      </div>
+      <div class="post">
+        <h3>User name</h3>
+        <br>
+        <h4>DOM manipulation</h4>
+        <br>
+        <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+        <br>
+        <div class="btn__action">
+          <button class="btn btn_like">LIKE</button>
+          <button class="btn btn_dislike">DISLIKE</button>
+          <button class="btn btn_reply">REPLY</button>
+        </div>
+      </div>
+      </div>
+      <div class="posts app_dev">
+      <div class="post">
+        <h3>User name</h3>
+        <br>
+        <h4>DOM manipulation</h4>
+        <br>
+        <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+        <br>
+        <div class="btn__action">
+          <button class="btn btn_like">LIKE</button>
+          <button class="btn btn_dislike">DISLIKE</button>
+          <button class="btn btn_reply">REPLY</button>
+        </div>
+      </div>
+      <div class="post">
+        <h3>User name</h3>
+        <br>
+        <h4>DOM manipulation</h4>
+        <br>
+        <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+        <br>
+        <div class="btn__action">
+          <button class="btn btn_like">LIKE</button>
+          <button class="btn btn_dislike">DISLIKE</button>
+          <button class="btn btn_reply">REPLY</button>
+        </div>
+      </div>
+      </div>
+      <div class="posts ethical_hacking">
+      <div class="post">
+        <h3>User name</h3>
+        <br>
+        <h4>DOM manipulation</h4>
+        <br>
+        <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+        <br>
+        <div class="btn__action">
+          <button class="btn btn_like">LIKE</button>
+          <button class="btn btn_dislike">DISLIKE</button>
+          <button class="btn btn_reply">REPLY</button>
+        </div>
+      </div>
+      <div class="post">
+        <h3>User name</h3>
+        <br>
+        <h4>DOM manipulation</h4>
+        <br>
+        <p>she is just a beginner in the group link to view output in your code and bio tomorrow morning 😃😃</p>
+        <br>
+        <div class="btn__action">
+          <button class="btn btn_like">LIKE</button>
+          <button class="btn btn_dislike">DISLIKE</button>
+          <button class="btn btn_reply">REPLY</button>
+        </div>
+      </div>
+      </div>
+  </div>
   <footer>
     <!--Quik links-->
   </footer>
 </body>
+
 </html>
-
-
