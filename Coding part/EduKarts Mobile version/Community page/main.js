@@ -22,9 +22,7 @@ const closeModal = function(){
                <div class="post">
                  <h3>User name</h3>
                  <br>
-                 <h4>${postSub.value}</h4>
-                 <br>
-                 <h5>${postSubTitle.value}</h5>
+                 <h4>${postSubTitle.value}</h4>
                  <br>
                  <p>${postSubDesc.value}</p>
                  <br>
