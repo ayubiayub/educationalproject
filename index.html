@@ -1,306 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Inter:wght@400;500;700&family=Lato:wght@100;300;400;700;900&family=Public+Sans:wght@100;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>EduKart</title>
-  </head>
-  <body>
-    <!-- HEADER SECTION:[INCLUDES NAV SECTION] -->
 
-    <header class="main-header">
-      <img class="logo" src="/logos/logos-01.png" alt="Edukart logo" />
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="nav-link" href="#">About Us</a></li>
-          <li><a class="nav-link" href="#">Commnunity</a></li>
-          <li><a class="nav-link" href="#">Career Map</a></li>
-          <li><a class="nav-link" href="#">Resources</a></li>
-          <li><a class="nav-link" href="#">Contact Us</a></li>
-          <li><a class="nav-link login" href="#">Log in</a></li>
-        </ul>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="forums.html">Forums</a></li>
+                    <li class="nav-item"><a href="posts.html">Posts</a></li>
+                    <li class="nav-item"><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand"> Edukart Forum </div>
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Everything</option>
+                    <option value="Titles">Titles</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
     </header>
+    <div class="container">
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>General Information</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+        </div>
+        <!--More-->
 
-    <main>
-      <section class="main-section">
-        <!-- HERO SECTION -->
-
-        <div class="hero">
-          <div class="hero-text-box">
-            <h1 class="hero-heading">
-              Let's cart on some <br />
-              knowledge
-            </h1>
-            <p class="hero-description">
-              The perfect place to find your guide to success! Find your guide
-              to your desired skill <br />
-              sets to ace the race towards triumph using the unique facilities
-              of career maps and a library <br />
-              full of fine resources for your reference.
-            </p>
-
-            <a class="hero-btn1" href="#">Get Started</a>
-
-            <a class="hero-btn2" href="#">Sign Up</a>
-            <div class="nothing"></div>
-          </div>
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>General Information</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,what is the point in living together with people you don't live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
         </div>
 
-        <!-- WHY SECTION -->
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>General Information</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h4><a href="#">Description Title</a></h4>
+                    <p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">JustAUser</a>
+                    <br>on <small>12 Dec 2022</small>
+                </div>
+            </div>
 
-        <div class="why-section">
-          <img
-            class="why-image"
-            src="/images/Illustration.png"
-            alt="illustration of education"
-          />
+
         </div>
-        <div class="why-text-box">
-          <div>
-            <h2 class="why-heading">Why Edukart?</h2>
-          </div>
-          <div class="why-description-box">
-            <p class="why-description">
-              We can be your first preference as a stepping stone, as we are
-              here to help you in:
-            </p>
-          </div>
+        <!---->
+    </div>
+
+    <!-- Forum Info -->
+    <div class="forum-info">
+        <div class="chart">
+            Edukart Forum - Stats &nbsp;<i class="fa fa-bar-chart"></i>
         </div>
+        <span><u>5,369</u> Posts in <u>48</u> Topics by <u>8,124</u> Members.</span><br>
+        <span>Latest post: <b><a href="">Random post</a></b> on Dec 15 2022 By <a href="">RandomUser</a></span>.<br>
+        <span>Check <a href="">the latest posts</a> .</span><br>
+    </div>
 
-        <div class="reason-box">
-          <div class="reason1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="reason-icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-            <p class="reason-description">
-              Finding your stance in the course you are looking for and take a
-              step forward towards your career
-            </p>
-          </div>
+    <footer>
+        <span>&copy;  Edukart Team | All Rights Reserved</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
 
-          <div class="reason2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="reason-icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-              />
-            </svg>
-            <p class="reason-description">
-              Laying out an efficient career map for your reference as you kick
-              start your journey into the course
-            </p>
-          </div>
-
-          <div class="reason3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="reason-icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              />
-            </svg>
-            <p class="reason-description">
-              Bringing to you the best options for your choice of course through
-              references to the most trusted study resources
-            </p>
-          </div>
-        </div>
-
-        <!-- CAREER MAP SECTION -->
-        <div class="career-map-box">
-          <div class="picture-box"></div>
-
-          <div class="career-map-text-box">
-            <h4 class="career-map-header">Unleash Your Way of Learning</h4>
-            <h5 class="career-map-subheading">
-              Discover Our Practical & Fresh Career Map
-            </h5>
-            <p class="career-map-description">
-              EduKart has made courses available for learners looking for
-              growing their <br />
-              career through the development of desired skills by providing them
-              with efficient <br />
-              career maps alongside the study resources
-            </p>
-
-            <a class="career-map-btn" href="#">read more</a>
-          </div>
-        </div>
-        <div class="mid-image-box">
-          <img
-            class="mid-image"
-            src="/images/Humaaans - 3 Characters.png"
-            alt=""
-          />
-        </div>
-
-        <!-- LEARN WITH TH BEST SECTION -->
-
-        <div class="featured-section">
-          <div class="featured-text-box">
-            <h6 class="featured-header">
-              Opportunities Provided Other Than Education
-            </h6>
-            <p class="featured-description">
-              We are delighted to announce that our initiative is not merely to
-              provide <br />
-              you with fine study resources but to also help you refine your
-              writing skills <br />
-              through the provision of blog writing
-            </p>
-          </div>
-        </div>
-
-        <!-- TEAM SECTION -->
-
-        <div class="team-description">
-          <h2 class="team-header">Meet Our Team</h2>
-
-          <p class="team-info">
-            A passionate group of knowledge seekers who perform interdependent
-            tasks <br />
-            as to help fellow learners accomplish their goals, this the
-            <span class="team-span">EduKart Team.</span>
-          </p>
-        </div>
-
-        <div class="team-section">
-          <div class="team-container">
-            <img
-              class="team-member1"
-              src="/images/Team1.jpg"
-              alt="team member"
-            />
-
-            <p class="team-member-name">Jay Rogan</p>
-
-            <p class="team-member-title">Developer</p>
-            <p class="bio">
-              A passionate developer looking to solve problems using modern
-              methodologies and process
-            </p>
-          </div>
-
-          <div class="team-container">
-            <img
-              class="team-member1"
-              src="/images/Team1.jpg"
-              alt="team member"
-            />
-
-            <p class="team-member-name">Jay Rogan</p>
-
-            <p class="team-member-title">Developer</p>
-            <p class="bio">
-              A passionate developer looking to solve problems using modern
-              methodologies and process
-            </p>
-          </div>
-
-          <div class="team-container">
-            <img
-              class="team-member1"
-              src="/images/Team1.jpg"
-              alt="team member"
-            />
-
-            <p class="team-member-name">Jay Rogan</p>
-
-            <p class="team-member-title">Developer</p>
-            <p class="bio">
-              A passionate developer looking to solve problems using modern
-              methodologies and process
-            </p>
-          </div>
-
-          <div class="team-container">
-            <img
-              class="team-member1"
-              src="/images/Team1.jpg"
-              alt="team member"
-            />
-
-            <p class="team-member-name">Jay Rogan</p>
-
-            <p class="team-member-title">Developer</p>
-            <p class="bio">
-              A passionate developer looking to solve problems using modern
-              methodologies and process
-            </p>
-          </div>
-
-          <div class="team-container">
-            <img
-              class="team-member1"
-              src="/images/Team1.jpg"
-              alt="team member"
-            />
-
-            <p class="team-member-name">Jay Rogan</p>
-
-            <p class="team-member-title">Developer</p>
-            <p class="bio">
-              A passionate developer looking to solve problems using modern
-              methodologies and process
-            </p>
-          </div>
-
-          <div class="team-container">
-            <img
-              class="team-member1"
-              src="/images/Team1.jpg"
-              alt="team member"
-            />
-
-            <p class="team-member-name">Jay Rogan</p>
-
-            <p class="team-member-title">Developer</p>
-            <p class="bio">
-              A passionate developer looking to solve problems using modern
-              methodologies and process
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
